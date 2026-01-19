@@ -1,3 +1,4 @@
+import 'package:dart_lesson/lesson_pages/cycle_game_page.dart';
 import 'package:dart_lesson/lesson_pages/for_while_loops.dart';
 import 'package:dart_lesson/lesson_pages/second_page.dart';
 import 'package:dart_lesson/lesson_pages/ternary_operators.dart';
@@ -58,6 +59,21 @@ class HomePage extends StatelessWidget {
                 },
                 child: const Text(
                   '3-сабак: Dart Language Basics - for жана while циклдер',
+                ),
+              ),
+
+              const SizedBox(height: 16),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const CycleGamePage(),
+                    ),
+                  );
+                },
+                child: const Text(
+                  '3-сабак: 3-сабак уландысы: Dart Language Basics - Оюн цикли',
                 ),
               ),
             ],
