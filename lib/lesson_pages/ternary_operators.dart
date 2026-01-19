@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class ThirthLessonPage extends StatefulWidget {
-  const ThirthLessonPage({super.key});
+class ThirdLessonPage extends StatefulWidget {
+  const ThirdLessonPage({super.key});
 
   @override
-  State<ThirthLessonPage> createState() => _ThirthLessonPageState();
+  State<ThirdLessonPage> createState() => _ThirthLessonPageState();
 }
 
-class _ThirthLessonPageState extends State<ThirthLessonPage> {
+class _ThirthLessonPageState extends State<ThirdLessonPage> {
   int age = 0;
 
   @override

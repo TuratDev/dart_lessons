@@ -1,3 +1,4 @@
+import 'package:dart_lesson/lesson_pages/for_while_loops.dart';
 import 'package:dart_lesson/lesson_pages/second_page.dart';
 import 'package:dart_lesson/lesson_pages/ternary_operators.dart';
 import 'package:flutter/material.dart';
@@ -28,7 +29,7 @@ class HomePage extends StatelessWidget {
                   );
                 },
 
-                child: const Text('Dart Language Basics - Variables'),
+                child: const Text('1-сабак: Dart Language Basics - Variables'),
               ),
               const SizedBox(height: 16),
               ElevatedButton(
@@ -36,11 +37,28 @@ class HomePage extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const ThirthLessonPage(),
+                      builder: (context) => const ThirdLessonPage(),
                     ),
                   );
                 },
-                child: const Text('Dart Language Basics - Ternary Operators'),
+                child: const Text(
+                  '2-сабак: Dart Language Basics - Ternary Operators',
+                ),
+              ),
+
+              const SizedBox(height: 16),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const LoopsMasterPage(),
+                    ),
+                  );
+                },
+                child: const Text(
+                  '3-сабак: Dart Language Basics - for жана while циклдер',
+                ),
               ),
             ],
           ),
