@@ -1,5 +1,6 @@
 import 'package:dart_lesson/lesson_pages/cycle_game_page.dart';
 import 'package:dart_lesson/lesson_pages/for_while_loops.dart';
+import 'package:dart_lesson/lesson_pages/functions_master_page.dart';
 import 'package:dart_lesson/lesson_pages/second_page.dart';
 import 'package:dart_lesson/lesson_pages/ternary_operators.dart';
 import 'package:flutter/material.dart';
@@ -74,6 +75,21 @@ class HomePage extends StatelessWidget {
                 },
                 child: const Text(
                   '3-сабак: 3-сабак уландысы: Dart Language Basics - Оюн цикли',
+                ),
+              ),
+
+              const SizedBox(height: 16),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const FunctionsMasterPage(),
+                    ),
+                  );
+                },
+                child: const Text(
+                  '4-сабак: Dart Language Basics - Functions Master Page',
                 ),
               ),
             ],
