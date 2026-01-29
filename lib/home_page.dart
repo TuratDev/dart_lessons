@@ -1,3 +1,4 @@
+import 'package:dart_lesson/lesson_pages/classes_objects_ui.dart';
 import 'package:dart_lesson/lesson_pages/cycle_game_page.dart';
 import 'package:dart_lesson/lesson_pages/data_structures_page.dart';
 import 'package:dart_lesson/lesson_pages/for_while_loops.dart';
@@ -106,6 +107,21 @@ class HomePage extends StatelessWidget {
                 },
                 child: const Text(
                   '5-сабак: Dart Language Basics - Data Structures Page',
+                ),
+              ),
+
+              const SizedBox(height: 16),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const OOPMasterPage(),
+                    ),
+                  );
+                },
+                child: const Text(
+                  '6-сабак: Dart Language Basics - OOP Master Page',
                 ),
               ),
             ],
